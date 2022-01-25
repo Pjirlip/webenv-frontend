@@ -1,0 +1,20 @@
+
+
+table {
+    table-layout: fixed;
+}
+
+thead th {
+    font-size: large !important;
+    vertical-align: middle;
+}
+
+tbody tr {
+    cursor: pointer;
+
+    td {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

@@ -1,0 +1,54 @@
+header {
+
+    width: 100%;
+    background: $main;
+
+    nav {
+        margin: 0 auto;
+        min-width: 300px;
+        max-width: 500px;
+
+        ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            height: 4rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: x-large;
+            transition: all 0.3s;
+                
+            a {
+                color: white;
+                font-size: inherit;
+                background: $second;
+                border-radius: 100%;
+                width: 2rem;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &.active{
+                    color: $highlight2;
+                }
+
+                &:hover{
+                    color: $highlight2;
+                }
+
+                svg {
+                    display: flex;
+                    justify-content: center;
+                    height: 50%;
+                    width: 50%;
+                }
+            }
+            
+        }        
+
+    }
+
+}

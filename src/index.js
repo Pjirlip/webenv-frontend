@@ -1,17 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { MantineProvider } from '@mantine/core';
+import { BrowserRouter } from "react-router-dom";
+import { NotificationsProvider } from '@mantine/notifications';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <BrowserRouter>
+      <MantineProvider theme={{ 
+        colorScheme: "dark", 
+        fontFamily: 'Roboto',
+        colors: {
+          highlight:  ["#17B07B", "#17B07B", "#17B07B", "#17B07B", "#17B07B", "#17B07B", "#17B07B", "#17B07B", "#17B07B", "#17B07B"],
+          highlight2: ["#7068D7", "#7068D7", "#7068D7", "#7068D7", "#7068D7", "#7068D7", "#7068D7", "#7068D7", "#7068D7", "#7068D7"]
+        },
+        primaryColor: "highlight"
+        }}>
+        <NotificationsProvider autoClose={4000} position="top-right">
+          <App />
+        </NotificationsProvider>
+      </MantineProvider>
+    </BrowserRouter>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

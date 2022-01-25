@@ -1,0 +1,37 @@
+
+
+.login {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+
+    .background {
+        position: absolute;
+        width: 100%;
+        background-image: url("../assets/img/bg.jpg");
+        height: 100%;
+        //filter: blur(1px);
+        opacity: 0.7;
+
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .overlay {
+        z-index: 10;
+        max-width: 800px;
+        min-width: 400px;
+        background-color: $second;
+        padding: 4em 4em;
+        border-radius: 3px;
+        filter: none;
+        box-shadow: 3px 3px 4px black;
+
+        button {
+            float: right;
+            background-color: $highlight;
+        }
+    }
+}

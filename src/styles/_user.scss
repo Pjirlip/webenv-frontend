@@ -1,0 +1,20 @@
+
+
+.usercontainer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+        max-width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border: solid 2px white;
+    }
+    
+    .line {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
