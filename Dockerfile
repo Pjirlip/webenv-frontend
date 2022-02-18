@@ -11,11 +11,11 @@ ENV REACT_APP_API_URL=${ARG_REACT_APP_API_URL}
 ENV REACT_APP_API_BASE=${ARG_REACT_APP_API_URL}
 
 WORKDIR /app
-COPY --chown=node:node package*.json /app
+COPY --chown=node:node package*.json /app/
 
 RUN npm ci
 
-COPY . .
+COPY --chown=node:node package*.json . ./
 
 RUN npm build
 
