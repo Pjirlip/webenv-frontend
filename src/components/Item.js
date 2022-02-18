@@ -70,7 +70,9 @@ const Item = ({id}) => {
     }, [alert, description, title, img, price, interested, self])
 
     const uploadImg = useCallback(async (event) => {
-        const fileUploaded = event.target.files[0];
+        const fileUploaded = event.target?.files[0];
+        if(!fileUploaded)
+            return
         const formData = new FormData()
         formData.append("files", fileUploaded)
         const response = (await axios.post("/upload", formData).catch(err => {
