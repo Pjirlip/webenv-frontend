@@ -7,7 +7,7 @@ ARG ARG_REACT_APP_API_URL=https://api.webnv.pjirlip.eu/api
 ARG ARG_REACT_APP_API_BASE=https://api.webnv.pjirlip.eu
 
 ENV REACT_APP_API_URL=${ARG_REACT_APP_API_URL}
-ENV REACT_APP_API_BASE=${ARG_REACT_APP_API_URL}
+ENV REACT_APP_API_BASE=${ARG_REACT_APP_API_BASE}
 
 WORKDIR /app
 COPY --chown=node:node package*.json /app/
