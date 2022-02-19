@@ -1,6 +1,6 @@
 FROM  node:16-alpine as build
 LABEL maintainer="Philipp Dippel <dev@pjirlip.eu>"
-LABEL org.opencontainers.image.source=https://github.com/Pjirlip/webnv-frontend
+LABEL org.opencontainers.image.source=https://github.com/pjirlip/webnv-frontend
 
 ENV NODE_ENV production
 
