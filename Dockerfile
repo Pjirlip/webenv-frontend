@@ -17,7 +17,7 @@ RUN npm ci
 
 COPY --chown=node:node package*.json . ./
 
-RUN npm build
+RUN npm run build
 
 FROM nginx:alpine
 
