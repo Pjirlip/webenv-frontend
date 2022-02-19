@@ -3,7 +3,7 @@ LABEL maintainer="Philipp Dippel <dev@pjirlip.eu>"
 LABEL org.opencontainers.image.source=https://github.com/pjirlip/webnv-frontend
 ENV NODE_ENV production
 
-ARG ARG_REACT_APP_API_URL=https://api.webnv.pjirlip.eu/api
+ARG ARG_REACT_APP_API_URL=https://api.webnv.pjirlip.eu/api/
 ARG ARG_REACT_APP_API_BASE=https://api.webnv.pjirlip.eu
 
 ENV REACT_APP_API_URL=${ARG_REACT_APP_API_URL}
