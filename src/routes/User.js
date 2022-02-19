@@ -16,7 +16,7 @@ const User = () => {
 
     <h2> Benutzer </h2>
     <div className='container main usercontainer'>
-       <img src={process.env.REACT_APP_API_BASE + user?.avatar?.formats?.large?.url} />
+       <img src={process.env.REACT_APP_API_BASE + (user?.avatar?.formats?.medium?.url ?? user?.avatar?.url)} />
        <div className='userinfo'> 
             <h3> {user?.forename} {user?.lastname} ({user?.username}) </h3>
             <div className='line'><BiEnvelope /><p> {user?.email }</p></div>
