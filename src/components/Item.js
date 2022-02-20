@@ -153,7 +153,7 @@ const Item = ({id}) => {
                     </form>
                 </section>
 
-                { id ? <CommentTimeline /> : <></>}
+                { id ? <CommentTimeline id={id} /> : <></>}
     </>
 };
 
